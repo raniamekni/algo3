@@ -1,0 +1,41 @@
+PROCEDURE product(vec1, vec2)
+VAR
+    total, i : INTEGER;
+BENGIN
+    total := 0;
+
+    FOR i FROM 0 TO n STEP 1 DO
+        total := total + vec[i] * vec2[i];
+        i := i + 1;
+    END_FOR
+        write("Dot product =", total");
+END
+
+---------------------------------------------------------------------------------------------
+
+FUNCTION dot_product(vec1, vec2)
+VAR 
+    total, i : INTEGER;
+BENGIN
+    total := 0;
+
+    FOR i FROM 0 TO N STEP 1 DO
+        total := total + vec1[i] * vec2[i];
+    END_FOR
+        RETURN total;
+
+----------------------------------------------------------------------------------------------
+
+ALGO ALGO_CHECKPOINT
+VAR 
+    n: INTEGER;
+    arr1: array_of_integer[3];
+    arr2: array_of_integer[3];
+BENGIN
+    arr1 := { -5, 2, 3 };
+    arr2 := { 2, 3, 4 };
+    n := 3;
+    write("Dot product");
+    write(dot_product(vec1, vec2));
+    dot_product(vec1, vec2);
+END
